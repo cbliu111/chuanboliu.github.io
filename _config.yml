@@ -56,7 +56,7 @@ plugins:
 
 author:
   name   : "Chuanbo Liu"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/cartoon.png"
   bio    : "I seek not just to live in this world, but to leave it transformed."
   links:
     - label: "Website"
