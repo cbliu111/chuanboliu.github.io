@@ -52,3 +52,15 @@ Journal of Chemical Theory and Computation 19 (21), 7505-7517, 2023.
 <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jctc.3c00470">[paper]</a>
 <a href="https://github.com/cbliu111/stoch_mean_field">[code]</a></p>
 </li>
+<li>
+<p><strong>Towards a dissipative quantum classifier</strong><br>
+He Wang, <strong>Chuanbo Liu</strong>, Jin Wang<br>
+arXiv preprint, 2023.
+<a href="https://arxiv.org/abs/2310.10254">[paper]</a>
+</li>
+<li>
+<p><strong>Parallel implementations of random time algorithm for chemical network stochastic simulations</strong><br>
+He Wang, <strong>Chuanbo Liu</strong>, Jin Wang<br>
+arXiv preprint, 2021.
+<a href="https://arxiv.org/pdf/2103.00405">[paper]</a>
+</li>
