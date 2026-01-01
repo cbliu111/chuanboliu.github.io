@@ -20,7 +20,9 @@ twitter_username: chuanboliu
 github_username: cbliu111
 minimal_mistakes_skin: default
 search: true
-mathjax: true
+math:
+  enable: true
+  engine: mathjax
 
 # Build settings
 markdown: kramdown
