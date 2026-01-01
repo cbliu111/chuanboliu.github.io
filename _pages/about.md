@@ -25,3 +25,9 @@ Advanced Science, e12325, 2025.
 <a href="https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/advs.202512325">[paper]</a>
 <a href="https://github.com/cbliu111/sparse-ffr">[code]</a></p>
 </li>
+<li>
+<p><strong>Self-organized learning emerges from coherent coupling of critical neurons</strong><br>
+<strong>Chuanbo Liu</strong>, Jin Wang<br>
+arXiv preprint, 2025.
+<a href="https://arxiv.org/abs/2509.00107">[paper]</a>
+</li>
