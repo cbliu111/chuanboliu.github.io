@@ -10,4 +10,3 @@ In particular, my PhD research focuses on understanding the physical principle t
 I switch my focus then to the broad application of theory of disordered systems to other complex systems, such as brains and the deep neural networks.<br>
 <p><strong>My research interests including: </strong> Physical theories of deep learning, Stochastic dynamics of complex systems, Inferencing dynamical laws from data, Brain-inspired learning.</p>
 My long-term research objective is uncovering the underlying principle that shared by both deep neural networks and brains; with a unified theory to explain the emergent intelligence, we can design energy efficient, interpretable, and self-consistent autonomous intelligent agent that can explore, accumulate, and organize knowledge continually in real world.</p>
-<h2 id="news">News</h2>
