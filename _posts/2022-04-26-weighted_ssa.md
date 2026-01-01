@@ -19,29 +19,29 @@ Given reaction $R_j$, stochiometric vector $v_j$, propensities $a_j(X(t))$, the 
 The joint probability of reaction $R_j$ occurs at time interval $(t + \tau, t + \tau + d \tau)$ is therefore
 
 $$ 
-P\{R_j, (t + \tau, t + \tau + d \tau)\} = a_j e^{-a_0 \tau} = \frac{a_j}{a_0} \times a_0 e^{-a_0 \tau} = P\{R_j\} P\{(t + \tau, t + \tau + d \tau)\}
+P\left\{R_j, (t + \tau, t + \tau + d \tau)\right\} = a_j e^{-a_0 \tau} = \frac{a_j}{a_0} \times a_0 e^{-a_0 \tau} = P\left\{R_j\right\} P\left\{(t + \tau, t + \tau + d \tau)\right\}
 $$
 
 Introduce the diverged probability $b_j$ with $b_0 = \sum_j b_j$ of the one-step jump process given above, we have 
 $$
-P\{R_j, (t + \tau, t + \tau + d \tau)\} = a_j e^{-a_0 \tau} \frac{b_j/b_0}{b_j/b_0} = \frac{b_j}{b_0} a_0 e^{-a_0 \tau} \frac{a_j/a_0}{b_j/b_0}
+P\left\{R_j, (t + \tau, t + \tau + d \tau)\right\} = a_j e^{-a_0 \tau} \frac{b_j/b_0}{b_j/b_0} = \frac{b_j}{b_0} a_0 e^{-a_0 \tau} \frac{a_j/a_0}{b_j/b_0}
 $$
-This is equivalent to choose the same jump according to probability $b_j/b_0$ with the same time interval distribution $p\{d\tau(t)\} = a_0 e^{-a_0 \tau}$ with an additional weighted factor $\omega_j = \frac{a_j/a_0}{b_j/b_0}$. 
+This is equivalent to choose the same jump according to probability $b_j/b_0$ with the same time interval distribution $p\left\{d\tau(t)\right\} = a_0 e^{-a_0 \tau}$ with an additional weighted factor $\omega_j = \frac{a_j/a_0}{b_j/b_0}$. 
 
 The trajectory weight can be obtained from the Markovian property 
 $$
 \omega(j_1, j_2, \ldots, j_n) = \prod_k \omega_{j_k}
 $$
-Weighted trajectory is useful for approximate the first passage time distribution $P\{X_0, S; t\}$, which is the probability that the system starts at time $0$ in state $X_0$ will first reach state set $S$ at some time $\tau \le t$. 
+Weighted trajectory is useful for approximate the first passage time distribution $P\left\{X_0, S; t\right\}$, which is the probability that the system starts at time $0$ in state $X_0$ will first reach state set $S$ at some time $\tau \le t$. 
 
-$P\{X_0, S; t\}$ is the cumulative distribution of the first passage time, and the mean first passage time (MFPT) is calculated as
+$P\left\{X_0, S; t\right\}$ is the cumulative distribution of the first passage time, and the mean first passage time (MFPT) is calculated as
 $$
-\langle T(X_0, S) \rangle = \int_0^\infty t(dp\{X_0, S; t\}/dt) dt = \int_0^\infty (1 - p\{X_0, S; t\}) dt
+\langle T(X_0, S) \rangle = \int_0^\infty t(dp\left\{X_0, S; t\right\}/dt) dt = \int_0^\infty (1 - p\left\{X_0, S; t\right\}) dt
 $$
 
-If using brute force simulation, $P\{X_0, S; t\} = \frac{m_n}{n}$. 
+If using brute force simulation, $P\left\{X_0, S; t\right\} = \frac{m_n}{n}$. 
 
-If using weighted trajectory simulation, $P\{X_0, S; t\} = \frac{\sum_i \prod_k \omega_{j_k}^{(i)}}{n}$.
+If using weighted trajectory simulation, $P\left\{X_0, S; t\right\} = \frac{\sum_i \prod_k \omega_{j_k}^{(i)}}{n}$.
 
 The trick is, we can arbitrarily manipulate the trajectory weights to increase the summation with a fewer number of trajectories. Therefore, if we have some known proposal distribution about the true distribution, the weighted trajectory algorithm is very helpful in sampling rare events accurately for saddle points on the probability landscape defined as $U = - \ln P(X)$. 
 
