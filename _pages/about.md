@@ -60,7 +60,7 @@ arXiv preprint, 2023.
 </li>
 <li>
 <p><strong>Parallel implementations of random time algorithm for chemical network stochastic simulations</strong><br>
-He Wang, <strong>Chuanbo Liu</strong>, Jin Wang<br>
+<strong>Chuanbo Liu</strong>, Jin Wang<br>
 arXiv preprint, 2021.
 <a href="https://arxiv.org/pdf/2103.00405">[paper]</a>
 </li>
