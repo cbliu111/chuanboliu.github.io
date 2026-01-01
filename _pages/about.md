@@ -11,12 +11,12 @@ I switch my focus then to the broad application of theory of disordered systems 
 <p><strong>My research interests including: </strong> Physical theories of deep learning, Stochastic dynamics of complex systems, Inferencing dynamical laws from data, Brain-inspired learning.</p>
 My long-term research objective is uncovering the underlying principle that shared by both deep neural networks and brains; with a unified theory to explain the emergent intelligence, we can design energy efficient, interpretable, and self-consistent autonomous intelligent agent that can explore, accumulate, and organize knowledge continually in real world.</p>
 
-<h2 id="contact">Contact</h2>
+<h2 id="contact">Contacts</h2>
 <ul>
 <li><strong>Email</strong>: chuanboliu.1 [AT] gmail [DOT] com</li>
 <li><strong>WeChat/微信</strong>: C-B-LIU</li>
 </ul>
-<h2 id="selected publication">Selected Publication</h2>
+<h2 id="selected publication">Selected Publications</h2>
 <ul>
 <li>
 <p><strong>Quantifying the Single‐Cell Morphological Landscape of Cellular Transdifferentiation through Force Field Reconstruction</strong><br>
@@ -65,7 +65,7 @@ arXiv preprint, 2021.
 <a href="https://arxiv.org/pdf/2103.00405">[paper]</a>
 </li>
 </ul>
-<h2 id="publication">Publication</h2>
+<h2 id="publication">Publications</h2>
 <ul>
 <li>
 <p><strong>Discovery of small molecule NSC290956 as a therapeutic agent for KRas mutant non-small-cell lung cancer</strong><br>
@@ -125,12 +125,21 @@ Molecular BioSystems 13 (10), 2152-2159, 2017.
 <h2 id="leading projects">Leading projects</h2>
 <ul>
 <li>
-<p><strong>2021.1-2023.12</strong>, Single-molecular dynamic study of light modulated genetic circuits
+<p><strong>2021.1-2023.12</strong>, "Single-molecular dynamic study of light modulated genetic circuits"
 </li>
 <li>
-<p><strong>2023.1-2025.12</strong>, Development of a CRISPR-Based Multichannel Rapid Nucleic Acid Molecular Detection Chip
+<p><strong>2023.1-2025.12</strong>, "Development of a CRISPR-Based Multichannel Rapid Nucleic Acid Molecular Detection Chip"
 </li>
 <li>
-<p><strong>2022.1-2025.12</strong>, Exploring the molecular mechanisms of persister cell formation and resuscitation at the single-cell and single-molecule level
+<p><strong>2022.1-2025.12</strong>, "Exploring the molecular mechanisms of persister cell formation and resuscitation at the single-cell and single-molecule level"
+</li>
+</ul>
+<h2 id="Collaborate projects">Collaborate projects</h2>
+<ul>
+<li>
+<p><strong>2023.1-2027.12</strong>, National Natural Science Foundation of China, Key Project, grant number 12234019, "Chromosome/Genome Structural Dynamics in Cell Fate Decision-Making", funding: RMB 2.90 million. 
+</li>
+<li>
+<p><strong>2019.1-2020.12</strong>, Chinese Academy of Sciences Scientific Instrument and Equipment R&D Project, grant number YJKYYQ20180038, "Single-molecule testing system for the rate of biochemical reactions in vivo in cells", funding: RMB 2.89 million
 </li>
 </ul>
