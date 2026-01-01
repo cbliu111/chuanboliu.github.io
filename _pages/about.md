@@ -16,7 +16,7 @@ My long-term research objective is uncovering the underlying principle that shar
 <li><strong>Email</strong>: chuanboliu.1 [AT] gmail [DOT] com</li>
 <li><strong>WeChat/微信</strong>: C-B-LIU</li>
 </ul>
-<h2 id="publication">Publication</h2>
+<h2 id="selected publication">Selected Publication</h2>
 <ul>
 <li>
 <p><strong>Quantifying the Single‐Cell Morphological Landscape of Cellular Transdifferentiation through Force Field Reconstruction</strong><br>
@@ -64,3 +64,49 @@ He Wang, <strong>Chuanbo Liu</strong>, Jin Wang<br>
 arXiv preprint, 2021.
 <a href="https://arxiv.org/pdf/2103.00405">[paper]</a>
 </li>
+</ul>
+<h2 id="publication">Publication</h2>
+<ul>
+<li>
+<p><strong>Discovery of small molecule NSC290956 as a therapeutic agent for KRas mutant non-small-cell lung cancer</strong><br>
+Jiaxin Zhang, Zuojia Liu, Wenjing Zhao, Xunzhe Yin, Xiliang Zheng, <strong>Chuanbo Liu</strong>, Jin Wang, Erkang Wang<br>
+Frontiers in Pharmacology 12, 797821, 2022.
+<a href="https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2021.797821/full">[paper]</a>
+</li>
+<li>
+<p><strong>Subinhibitory concentrations of Honokiol reduce α-Hemolysin (Hla) secretion by Staphylococcus aureus and the Hla-induced inflammatory response by inactivating the NLRP3 inflammasome</strong><br>
+Na Guo, Zuojia Liu, Zhiqiang Yan, Zonghui Liu, Kun Hao, <strong>Chuanbo Liu</strong>, Jin Wang<br>
+Emerging microbes & infections 8 (1), 707-716, 2019.
+<a href="https://www.tandfonline.com/doi/full/10.1080/22221751.2019.1617643">[paper]</a>
+</li>
+<li>
+<p><strong>Lighting Up the Thioflavin T by Parallel-Stranded TG(GA)n DNA Homoduplexes</strong><br>
+Jinbo Zhu, Zhiqiang Yan, Weijun Zhou, <strong>Chuanbo Liu</strong>, Jin Wang, Erkang Wang<br>
+ACS sensors 3 (6), 1118-1125, 2018.
+<a href="https://pubs.acs.org/doi/abs/10.1021/acssensors.8b00141">[paper]</a>
+</li>
+<li>
+<p><strong>Solvent effect on FRET spectroscopic ruler</strong><br>
+Songyuan Qu, <strong>Chuanbo Liu</strong>, Qiong Liu, Wei Wu, Baoji Du, Jin Wang<br>
+The Journal of Chemical Physics 148 (12), 2018.
+<a href="https://pubs.aip.org/aip/jcp/article/148/12/123331/1024072">[paper]</a>
+</li>
+<li>
+<p><strong>Electrostatic forces govern the binding mechanism of intrinsically disordered histone chaperones</strong><br>
+<strong>Chuanbo Liu</strong>, Tianshu Wang, Yawen Bai, Jin Wang<br>
+PLoS One 12 (5), e0178405, 2017.
+<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0178405">[paper]</a>
+</li>
+<li>
+<p><strong>Uncovering the molecular and physiological processes of anticancer leads binding human serum albumin: A physical insight into drug efficacy</strong><br>
+<strong>Chuanbo Liu</strong>, Tianshu Wang, Yawen Bai, Jin Wang<br>
+PLoS One 12 (4), e0176208, 2017.
+<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0176208">[paper]</a>
+</li>
+<li>
+<p><strong>Effects of flexibility and electrostatic interactions on the coupled binding–folding mechanisms of Chz.core and H2A.z–H2B</strong><br>
+Xu Shang, Wenting Chu, Xiakun Chu, <strong>Chuanbo Liu</strong>, Liufang Xu, Jin Wang<br>
+Molecular BioSystems 13 (10), 2152-2159, 2017.
+<a href="https://pubs.rsc.org/en/content/articlelanding/2017/mb/c7mb00103g/unauth">[paper]</a>
+</li>
+</ul>
