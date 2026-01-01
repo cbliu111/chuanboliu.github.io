@@ -122,3 +122,15 @@ Molecular BioSystems 13 (10), 2152-2159, 2017.
 <p><strong>2022.1-2025.12</strong>, the National Natural Science Foundations of China (grant number 32171245) 
 </li>
 </ul>
+<h2 id="leading projects">Leading projects</h2>
+<ul>
+<li>
+<p><strong>2021.1-2023.12</strong>, Single-molecular dynamic study of light modulated genetic circuits
+</li>
+<li>
+<p><strong>2023.1-2025.12</strong>, Development of a CRISPR-Based Multichannel Rapid Nucleic Acid Molecular Detection Chip
+</li>
+<li>
+<p><strong>2022.1-2025.12</strong>, Exploring the molecular mechanisms of persister cell formation and resuscitation at the single-cell and single-molecule level
+</li>
+</ul>
