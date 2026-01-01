@@ -29,7 +29,7 @@ Advanced Science, e12325, 2025.
 <p><strong>Self-organized learning emerges from coherent coupling of critical neurons</strong><br>
 <strong>Chuanbo Liu</strong>, Jin Wang<br>
 arXiv preprint, 2025.
-<a href="https://arxiv.org/abs/2509.00107">[paper]</a>
+<a href="https://arxiv.org/abs/2509.00107">[paper]</a></p>
 </li>
 <li>
 <p><strong>Distilling dynamical knowledge from stochastic reaction networks</strong><br>
@@ -56,13 +56,13 @@ Journal of Chemical Theory and Computation 19 (21), 7505-7517, 2023.
 <p><strong>Towards a dissipative quantum classifier</strong><br>
 He Wang, <strong>Chuanbo Liu</strong>, Jin Wang<br>
 arXiv preprint, 2023.
-<a href="https://arxiv.org/abs/2310.10254">[paper]</a>
+<a href="https://arxiv.org/abs/2310.10254">[paper]</a></p>
 </li>
 <li>
 <p><strong>Parallel implementations of random time algorithm for chemical network stochastic simulations</strong><br>
 <strong>Chuanbo Liu</strong>, Jin Wang<br>
 arXiv preprint, 2021.
-<a href="https://arxiv.org/pdf/2103.00405">[paper]</a>
+<a href="https://arxiv.org/pdf/2103.00405">[paper]</a></p>
 </li>
 </ul>
 <h2 id="publication">Publications</h2>
@@ -71,75 +71,75 @@ arXiv preprint, 2021.
 <p><strong>Discovery of small molecule NSC290956 as a therapeutic agent for KRas mutant non-small-cell lung cancer</strong><br>
 Jiaxin Zhang, Zuojia Liu, Wenjing Zhao, Xunzhe Yin, Xiliang Zheng, <strong>Chuanbo Liu</strong>, Jin Wang, Erkang Wang<br>
 Frontiers in Pharmacology 12, 797821, 2022.
-<a href="https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2021.797821/full">[paper]</a>
+<a href="https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2021.797821/full">[paper]</a></p>
 </li>
 <li>
 <p><strong>Subinhibitory concentrations of Honokiol reduce α-Hemolysin (Hla) secretion by Staphylococcus aureus and the Hla-induced inflammatory response by inactivating the NLRP3 inflammasome</strong><br>
 Na Guo, Zuojia Liu, Zhiqiang Yan, Zonghui Liu, Kun Hao, <strong>Chuanbo Liu</strong>, Jin Wang<br>
 Emerging microbes & infections 8 (1), 707-716, 2019.
-<a href="https://www.tandfonline.com/doi/full/10.1080/22221751.2019.1617643">[paper]</a>
+<a href="https://www.tandfonline.com/doi/full/10.1080/22221751.2019.1617643">[paper]</a></p>
 </li>
 <li>
 <p><strong>Lighting Up the Thioflavin T by Parallel-Stranded TG(GA)n DNA Homoduplexes</strong><br>
 Jinbo Zhu, Zhiqiang Yan, Weijun Zhou, <strong>Chuanbo Liu</strong>, Jin Wang, Erkang Wang<br>
 ACS sensors 3 (6), 1118-1125, 2018.
-<a href="https://pubs.acs.org/doi/abs/10.1021/acssensors.8b00141">[paper]</a>
+<a href="https://pubs.acs.org/doi/abs/10.1021/acssensors.8b00141">[paper]</a></p>
 </li>
 <li>
 <p><strong>Solvent effect on FRET spectroscopic ruler</strong><br>
 Songyuan Qu, <strong>Chuanbo Liu</strong>, Qiong Liu, Wei Wu, Baoji Du, Jin Wang<br>
 The Journal of Chemical Physics 148 (12), 2018.
-<a href="https://pubs.aip.org/aip/jcp/article/148/12/123331/1024072">[paper]</a>
+<a href="https://pubs.aip.org/aip/jcp/article/148/12/123331/1024072">[paper]</a></p>
 </li>
 <li>
 <p><strong>Electrostatic forces govern the binding mechanism of intrinsically disordered histone chaperones</strong><br>
 <strong>Chuanbo Liu</strong>, Tianshu Wang, Yawen Bai, Jin Wang<br>
 PLoS One 12 (5), e0178405, 2017.
-<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0178405">[paper]</a>
+<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0178405">[paper]</a></p>
 </li>
 <li>
 <p><strong>Uncovering the molecular and physiological processes of anticancer leads binding human serum albumin: A physical insight into drug efficacy</strong><br>
 <strong>Chuanbo Liu</strong>, Tianshu Wang, Yawen Bai, Jin Wang<br>
 PLoS One 12 (4), e0176208, 2017.
-<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0176208">[paper]</a>
+<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0176208">[paper]</a></p>
 </li>
 <li>
 <p><strong>Effects of flexibility and electrostatic interactions on the coupled binding–folding mechanisms of Chz.core and H2A.z–H2B</strong><br>
 Xu Shang, Wenting Chu, Xiakun Chu, <strong>Chuanbo Liu</strong>, Liufang Xu, Jin Wang<br>
 Molecular BioSystems 13 (10), 2152-2159, 2017.
-<a href="https://pubs.rsc.org/en/content/articlelanding/2017/mb/c7mb00103g/unauth">[paper]</a>
+<a href="https://pubs.rsc.org/en/content/articlelanding/2017/mb/c7mb00103g/unauth">[paper]</a></p>
 </li>
 </ul>
 <h2 id="grants">Grants</h2>
 <ul>
 <li>
-<p><strong>2021.1-2023.12</strong>, the National Natural Science Foundations of China (grant number 32000888) 
+<p><strong>2021.1-2023.12</strong>, the National Natural Science Foundations of China (grant number 32000888)</p> 
 </li>
 <li>
-<p><strong>2023.1-2025.12</strong>, Jilin Province Science and Technology Development Plan (grant number 20230101152JC) 
+<p><strong>2023.1-2025.12</strong>, Jilin Province Science and Technology Development Plan (grant number 20230101152JC)</p> 
 </li>
 <li>
-<p><strong>2022.1-2025.12</strong>, the National Natural Science Foundations of China (grant number 32171245) 
+<p><strong>2022.1-2025.12</strong>, the National Natural Science Foundations of China (grant number 32171245)</p> 
 </li>
 </ul>
 <h2 id="leading projects">Leading projects</h2>
 <ul>
 <li>
-<p><strong>2021.1-2023.12</strong>, "Single-molecular dynamic study of light modulated genetic circuits"
+<p><strong>2021.1-2023.12</strong>, "Single-molecular dynamic study of light modulated genetic circuits"</p>
 </li>
 <li>
-<p><strong>2023.1-2025.12</strong>, "Development of a CRISPR-Based Multichannel Rapid Nucleic Acid Molecular Detection Chip"
+<p><strong>2023.1-2025.12</strong>, "Development of a CRISPR-Based Multichannel Rapid Nucleic Acid Molecular Detection Chip"</p>
 </li>
 <li>
-<p><strong>2022.1-2025.12</strong>, "Exploring the molecular mechanisms of persister cell formation and resuscitation at the single-cell and single-molecule level"
+<p><strong>2022.1-2025.12</strong>, "Exploring the molecular mechanisms of persister cell formation and resuscitation at the single-cell and single-molecule level"</p>
 </li>
 </ul>
 <h2 id="Collaborate projects">Collaborate projects</h2>
 <ul>
 <li>
-<p><strong>2023.1-2027.12</strong>, National Natural Science Foundation of China, Key Project, grant number 12234019, "Chromosome/Genome Structural Dynamics in Cell Fate Decision-Making", funding: RMB 2.90 million. 
+<p><strong>2023.1-2027.12</strong>, National Natural Science Foundation of China, Key Project, grant number 12234019, "Chromosome/Genome Structural Dynamics in Cell Fate Decision-Making", funding: RMB 2.90 million. </p>
 </li>
 <li>
-<p><strong>2019.1-2020.12</strong>, Chinese Academy of Sciences Scientific Instrument and Equipment R&D Project, grant number YJKYYQ20180038, "Single-molecule testing system for the rate of biochemical reactions in vivo in cells", funding: RMB 2.89 million
+<p><strong>2019.1-2020.12</strong>, Chinese Academy of Sciences Scientific Instrument and Equipment R&D Project, grant number YJKYYQ20180038, "Single-molecule testing system for the rate of biochemical reactions in vivo in cells", funding: RMB 2.89 million</p>
 </li>
 </ul>
