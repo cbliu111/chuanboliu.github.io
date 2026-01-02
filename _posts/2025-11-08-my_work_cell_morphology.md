@@ -1,6 +1,6 @@
 ---
 title: "My work: force field reconstruction from single-cell morphology data"
-date: 2024-11-13
+date: 2025-11-08
 categories:
   - blog
 tags:
