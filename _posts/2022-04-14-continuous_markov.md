@@ -1,3 +1,14 @@
+---
+title: "Continuous Markov process and continual decision making"
+date: 2022-04-14
+categories:
+  - blog
+tags:
+  - algorithm
+  - reinforcement learning
+math: true
+---
+
 A continuous time Markov chain can be viewed as a discrete time Markov chain with altered transition times. 
 
 $P(X(s+t)=j \mid X(s)=i, X(r)=i_r, r \in \xi_s \subseteq [0, s)) = P(X(s+t)=j \mid X(s)=i)$
