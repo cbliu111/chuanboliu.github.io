@@ -6,7 +6,7 @@ categories:
 tags:
   - algorithm
   - stochastic simulation
-mathjax: true
+math: true
 ---
 
 ## The weighted trajectory algorithm for stochastic simulation 
