@@ -22,7 +22,7 @@ minimal_mistakes_skin: default
 search: true
 math:
   enable: true
-  engine: mathjax
+  engine: katex
 
 # Build settings
 markdown: kramdown
