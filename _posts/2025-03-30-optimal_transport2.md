@@ -104,7 +104,7 @@ $u^\* = \inf_u KL(P^u\mid Q) + \beta D_\Psi(P_1^u \mid q_1), \quad dQ_t = \sigma
 where $u$ induced the path measure $P^u$. 
 It can be reformulated in the following expressions using Girsanov's theorem \cite{sarkkaAppliedStochasticDifferential2019}
 
-$u^\* = \inf_u \int_{0}^{1} \int_{\mathcal{X}} \frac{1}{2} \mid u_t(x)||^2 d\rho_t(x) dt + \beta D_\Psi(\rho_1 \mid q_1)$
+$u^\* = \inf_u \int_{0}^{1} \int_{\mathcal{X}} \frac{1}{2} \lVert u_t(x) \rVert^2 d\rho_t(x) dt + \beta D_\Psi(\rho_1 \mid q_1)$
 
 s.t.
 
