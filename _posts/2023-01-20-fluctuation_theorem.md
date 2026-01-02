@@ -39,7 +39,7 @@ $F_\tau = -k_B T \ln \sum_x e^{-\beta E(x, \tau)}$
 
 Thus, the probability density ratio of the forward trajectory with its backward trajectory is 
 
-$\frac{P[x(t)]}{P[\hat{x}(t)]} = \frac{P(x_0, 0)P[x(t)|x_0, 0]}{P(\hat{x}_0, 0)P[\hat{x}(t)|\hat{x}_0, 0]} = e^{\beta(\Delta E - \Delta F)} e^{-\beta Q[x(t)]}$
+$\frac{P[x(t)]}{P[\hat{x}(t)]} = \frac{P(x_0, 0)P[x(t) \mid x_0, 0]}{P(\hat{x}_0, 0)P[\hat{x}(t) \mid \hat{x}_0, 0]} = e^{\beta(\Delta E - \Delta F)} e^{-\beta Q[x(t)]}$
 
 according to the above equilibrium distribution and the time-scale separation assumption used by the second law of stochastic thermodynamics. 
 
