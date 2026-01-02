@@ -16,9 +16,9 @@ Weighted stochastic simulation is nothing more but application of importance sam
 
 Given reaction $R_j$, stochiometric vector $v_j$, propensities $a_j(X(t))$, the time interval of jumps is exponentially distributed and the probability of chosen reaction $R_j$ is $\frac{a_j(X(t))}{a_0}$, where $a_0 = \sum_j a_j$. 
 
-The joint probability of reaction $R_j$ occurs at time interval $(t + \tau, t + \tau + d \tau)$ is therefore
+The joint probability of reaction $R_j$ occurs at time interval $(t + \tau, t + \tau + d \tau)$ is therefore $ P\{R_j, (t + \tau, t + \tau + d \tau)\} $
 
-$$ P\{R_j, (t + \tau, t + \tau + d \tau)\} $$
+
 
 $
 P\left\{R_j, (t + \tau, t + \tau + d \tau)\right\} = a_j e^{-a_0 \tau} = \frac{a_j}{a_0} \times a_0 e^{-a_0 \tau} = P\{R_j\} P\{(t + \tau, t + \tau + d \tau)\}
