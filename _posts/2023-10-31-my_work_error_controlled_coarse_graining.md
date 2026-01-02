@@ -15,7 +15,7 @@ The paper is published in JCTC, [Error-Controlled Coarse-Graining Dynamics with 
 
 * Chemical reaction systems have intrinsic high-dimensional state space $S \in \mathbb{R}^d$, solving chemical master equation is challenging. 
 * Common methods and computational complexities:
-  * Kinetic Monte Carlo $O(dn)^{1/2}$, convergence demands typically $n \approx 10^4 \sim 10^7$ trajectories, with random error $P\left(|\epsilon_n| \le 1.96 \frac{\sigma}{\sqrt{n}} \right)≈0.95$
+  * Kinetic Monte Carlo $O(dn)^{1/2}$, convergence demands typically $n \approx 10^4 \sim 10^7$ trajectories, with random error $P\left(\lvert \epsilon_n \rvert \le 1.96 \frac{\sigma}{\sqrt{n}} \right)≈0.95$
   * Finite state projection $O(w^d)$, error $P(x \in X_w) \le \epsilon$
 * Delbrück-Gillespie process, a consistent theoretical framework: 
   * Reaction rate equation, Ludwig Wilhelmy, 1850s
