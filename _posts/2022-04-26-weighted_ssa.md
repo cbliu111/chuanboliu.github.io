@@ -24,22 +24,21 @@ Introduce the diverged probability $b_j$ with $b_0 = \sum_j b_j$ of the one-step
 
 $P\left\\{R_j, (t + \tau, t + \tau + d \tau)\right\\} = a_j e^{-a_0 \tau} \frac{b_j/b_0}{b_j/b_0} = \frac{b_j}{b_0} a_0 e^{-a_0 \tau} \frac{a_j/a_0}{b_j/b_0}$
 
-This is equivalent to choose the same jump according to probability $b_j/b_0$ with the same time interval distribution $p\left\{d\tau(t)\right\} = a_0 e^{-a_0 \tau}$ with an additional weighted factor $\omega_j = \frac{a_j/a_0}{b_j/b_0}$. 
+This is equivalent to choose the same jump according to probability $b_j/b_0$ with the same time interval distribution $p\left\\{d\tau(t)\right\\} = a_0 e^{-a_0 \tau}$ with an additional weighted factor $\omega_j = \frac{a_j/a_0}{b_j/b_0}$. 
 
 The trajectory weight can be obtained from the Markovian property 
-$$
-\omega(j_1, j_2, \ldots, j_n) = \prod_k \omega_{j_k}
-$$
-Weighted trajectory is useful for approximate the first passage time distribution $P\left\{X_0, S; t\right\}$, which is the probability that the system starts at time $0$ in state $X_0$ will first reach state set $S$ at some time $\tau \le t$. 
 
-$P\left\{X_0, S; t\right\}$ is the cumulative distribution of the first passage time, and the mean first passage time (MFPT) is calculated as
-$$
-\langle T(X_0, S) \rangle = \int_0^\infty t(dp\left\{X_0, S; t\right\}/dt) dt = \int_0^\infty (1 - p\left\{X_0, S; t\right\}) dt
-$$
+$\omega(j_1, j_2, \ldots, j_n) = \prod_k \omega_{j_k}$
 
-If using brute force simulation, $P\left\{X_0, S; t\right\} = \frac{m_n}{n}$. 
+Weighted trajectory is useful for approximate the first passage time distribution $P\left\\{X_0, S; t\right\\}$, which is the probability that the system starts at time $0$ in state $X_0$ will first reach state set $S$ at some time $\tau \le t$. 
 
-If using weighted trajectory simulation, $P\left\{X_0, S; t\right\} = \frac{\sum_i \prod_k \omega_{j_k}^{(i)}}{n}$.
+$P\left\\{X_0, S; t\right\\}$ is the cumulative distribution of the first passage time, and the mean first passage time (MFPT) is calculated as
+
+$\langle T(X_0, S) \rangle = \int_0^\infty t(dp\left\\{X_0, S; t\right\\}/dt) dt = \int_0^\infty (1 - p\left\\{X_0, S; t\right\\}) dt$
+
+If using brute force simulation, $P\left\\{X_0, S; t\right\\} = \frac{m_n}{n}$. 
+
+If using weighted trajectory simulation, $P\left\\{X_0, S; t\right\\} = \frac{\sum_i \prod_k \omega_{j_k}^{(i)}}{n}$.
 
 The trick is, we can arbitrarily manipulate the trajectory weights to increase the summation with a fewer number of trajectories. Therefore, if we have some known proposal distribution about the true distribution, the weighted trajectory algorithm is very helpful in sampling rare events accurately for saddle points on the probability landscape defined as $U = - \ln P(X)$. 
 
@@ -49,13 +48,13 @@ So the problem becomes, how to chose $\gamma_j$ to best estimate the first passa
 
 It can be shown that the number of simulations to reduce the uncertainty of the first passage time distribution is related to the variance of the weighted samplings. 
 Since the weight of each trajectory is an accumulation of many step-weights, we can approximate the weight distribution as a Gaussian distribution according to the central limit theorem, the sample variance 
-$$
-\sigma^2 = \frac{1}{n} \sum_k \omega_k^2 - \left(\frac{1}{n} \sum_k \omega_k\right)^2
-$$
+
+$\sigma^2 = \frac{1}{n} \sum_k \omega_k^2 - \left(\frac{1}{n} \sum_k \omega_k\right)^2$
+
 is associated with the uncertainty $\epsilon = \pm \frac{\sigma}{\sqrt{n}}$ and relative uncertainty $u = \epsilon/p$. And for ordinary stochastic simulation, each trajectory weight the same, $\hat{\sigma}^2 = (m_n/n)(1-(m_n/n))$, with uncertainty $\hat{\epsilon} = \pm \sqrt{\frac{(m_n/n)(1-(m_n/n))}{n}}$, and relative uncertainty, for rare trajectory $m_n/n \ll 1$
-$$
-\hat{u}=\pm \sqrt{\frac{1-(m_n/n)}{m_n}} \approx \pm \sqrt{1/m_n}
-$$
+
+$\hat{u}=\pm \sqrt{\frac{1-(m_n/n)}{m_n}} \approx \pm \sqrt{1/m_n}$
+
 If ordinary and weighted simulation has the same relative uncertainty, $u = \hat{u}$, denote the number of successful run in ordinary simulation as $\hat{m}$, we have $\hat{m} = \hat{p}\hat{n}$, and $\hat{n} = \hat{p}/\epsilon^2$, also $n=\sigma^2/\epsilon^2$, we have $g = \hat{n}/n = \hat{p}/\sigma^2$. 
 
 So the gain of time reduction between ordinary and weighted stochastic simulations that needed to achieve the same relative uncertainty is related to the sample variance of the weighted simulation. 
@@ -75,9 +74,9 @@ We can then apply **Weighted Trajectory Stochastic Simulation (WTSS)** to Genera
 
 To make this work, we first map the terminology of stochastic simulation to Generative AI:
 
-*   **Particle/System State ($x_t$):** The current context window (the prompt + reasoning generated so far).
+*   **Particle/System State ($X_t$):** The current context window (the prompt + reasoning generated so far).
 *   **Trajectory ($\tau$):** The entire Chain-of-Thought (CoT) or sequence of actions taken by an agent from start to finish.
-*   **Reaction/Transition ($P(x_{t+1}|x_t)$):** The LLM's probability distribution for the next token or action.
+*   **Reaction/Transition** $P(X_{t+1}|X_t)$: The LLM's probability distribution for the next token or action.
 *   **Weight ($w$):** The importance or validity of a specific reasoning path.
 *   **Rare Event:** Successfully solving a very complex, multi-step logic puzzle or generating a novel scientific hypothesis (events that have low probability under standard random sampling).
 
