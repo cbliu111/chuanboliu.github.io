@@ -83,9 +83,9 @@ The joint distribution is then
 $P(T_i \le t, N_i = j) = P(T_i \le t)P(N_i = j) = (1-e^{\nu_i t})\left(\frac{Q_{i,j}}{\nu_i}\right)$
 
 Noted the above construction does not work for self-loop transition. But we can always transform a self-loop transition into an non-self-loop continuous time Markov chain. 
-The transition probabilities are changed to $\hat{P}_{i,j}=\frac{P_{i,j}}{1-P_{i,i}}$, and to recover the rate matrix 
+The transition probabilities are changed to $\hat{P}\_{i,j}=\frac{P_{i,j}}{1-P_{i,i}}$, and to recover the rate matrix 
 
-$\hat{Q}_{i,j} \equiv \hat{\nu} \hat{P}_{i,j} = \nu_i (1-P_{i,i})\frac{P_{i,j}}{1-P_{i,i}}=\nu_i P_{i,j}$
+$\hat{Q}\_{i,j} \equiv \hat{\nu} \hat{P}\_{i,j} = \nu_i (1-P_{i,i})\frac{P_{i,j}}{1-P_{i,i}}=\nu_i P_{i,j}$
 
 where $\hat{\nu} = \nu_i (1-P_{i,i})$. 
 
@@ -98,19 +98,19 @@ $\nu_i = \sum_{j, j\neq i} Q_{i,j} \le \lambda$
 then the self-loop transition probability is $1-\frac{\nu_i}{\lambda}$. Thus, in every state $i$, an independent thinning is required to recover the original continuous time Markov chain from the uniformized process. 
 The transition probabilities become
 
-$\tilde{P}_{i,j}=\frac{Q_{i,j}}{\lambda}$
+$\tilde{P}\_{i,j}=\frac{Q_{i,j}}{\lambda}$
 
-$\tilde{P}_{i,i}=1-\sum_{j, j\ne i} \tilde{P}_{i,j}=1+\frac{Q_{i,i}}{\lambda}$
+$\tilde{P}\_{i,i}=1-\sum_{j, j\ne i} \tilde{P}\_{i,j}=1+\frac{Q_{i,i}}{\lambda}$
 
 In matrix notation, $\tilde{P}=I+\lambda^{-1}Q$. 
 
 The transition probability is then
 
-$P_{i,j}(t) = \sum_{k=0}^\infty \tilde{P}_{i,j}^k P(N(t)=k) = \sum_{k=0}^\infty \tilde{P}_{i,j}^k \frac{e^{-\lambda t} (\lambda t)^k}{k!}$
+$P_{i,j}(t) = \sum_{k=0}^\infty \tilde{P}\_{i,j}^k P(N(t)=k) = \sum_{k=0}^\infty \tilde{P}\_{i,j}^k \frac{e^{-\lambda t} (\lambda t)^k}{k!}$
 
-We can verify the equivalence of uniformization process and the origin process. Since $\tilde{P}_{i,j}^0=0$ for $i \neq j$, and $\tilde{P}_{i,j}^0=1$ for $i = j$, 
+We can verify the equivalence of uniformization process and the origin process. Since $\tilde{P}\_{i,j}^0=0$ for $i \neq j$, and $\tilde{P}\_{i,j}^0=1$ for $i = j$, 
 
-$P_{i,j}(h)= \lambda h e^{-\lambda h} \tilde{P}_{i,j}^1 + o(h) = \lambda h e^{-\lambda h} \frac{Q_{i,j}}{\lambda} + o(h) = Q_{i,j}h + o(h)$
+$P_{i,j}(h)= \lambda h e^{-\lambda h} \tilde{P}\_{i,j}^1 + o(h) = \lambda h e^{-\lambda h} \frac{Q_{i,j}}{\lambda} + o(h) = Q_{i,j}h + o(h)$
 
 and 
 
@@ -123,8 +123,6 @@ $P(t) = \sum_{k=0}^\infty \tilde{P}^k \frac{e^{-\lambda t} (\lambda t)^k}{k!} = 
 
 Existence and uniqueness of limiting probability distribution:
 For an irreducible finite-state continuous time Markov chain, there exists a unique limiting probability vector such that $\alpha_j \equiv \lim_{t \to \infty} P_{i,j}(t)$ is stationary for all $j$ and $t > 0$. 
-
-
 
 
 
