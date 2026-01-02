@@ -18,7 +18,7 @@ Given reaction $R_j$, stochiometric vector $v_j$, propensities $a_j(X(t))$, the 
 
 The joint probability of reaction $R_j$ occurs at time interval $(t + \tau, t + \tau + d \tau)$ is therefore
 
-$$ P\left\\{R_j, (t + \tau, t + \tau + d \tau)\right\\} $$
+$$ P\{R_j, (t + \tau, t + \tau + d \tau)\} $$
 
 $
 P\left\{R_j, (t + \tau, t + \tau + d \tau)\right\} = a_j e^{-a_0 \tau} = \frac{a_j}{a_0} \times a_0 e^{-a_0 \tau} = P\{R_j\} P\{(t + \tau, t + \tau + d \tau)\}
