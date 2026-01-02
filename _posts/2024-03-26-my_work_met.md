@@ -17,7 +17,7 @@ The paper is published in PNAS, [Distilling dynamical knowledge from stochastic 
 * Methodologies of solving CME and drawbacks:
   * Trajectory sampling: Kinetic Monte Carlo
     * slow convergence: typically $10^4 \sim 10^7$ trajectories to estimate the joint probabilities
-    * random error: $P\left(|\epsilon_n| \le 1.96 \frac{\sigma}{\sqrt{n}} \right)≈0.95$
+    * random error: $P\left( \lvert \epsilon_n \rvert \le 1.96 \frac{\sigma}{\sqrt{n}} \right)≈0.95$
     * low coverage: hard to sample rare events
   * Numerical integration: Finite State Projection (FSP)
     * high computational/memory complexity, on order of $O(w^d)$
