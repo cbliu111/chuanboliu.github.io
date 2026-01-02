@@ -112,7 +112,7 @@ In the RL framework (specifically Offline RL or Model-Based RL), this aligns wit
 *   **Reward $R(\tau)$:** The correctness of the final answer or the coherence of the plan.
 *   **Twist:** Instead of just updating weights $\theta$ (which is slow and expensive), we perform **inference-time optimization**. We treat the generation as a simulation where we want to estimate the expectation of success.
 
-$$ \mathbb{E}[R] = \int P(\tau) R(\tau) d\tau \approx \sum_{i} w_i R(\tau_i) $$
+$\mathbb{E}[R] = \int P(\tau) R(\tau) d\tau \approx \sum_{i} w_i R(\tau_i)$
 
 By using weighted simulation, we can estimate the best plan without needing to retrain the model. We are essentially doing **Monte Carlo Tree Search (MCTS) on steroids**, using continuous weights rather than discrete visit counts.
 
