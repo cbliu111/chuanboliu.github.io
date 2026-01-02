@@ -76,7 +76,7 @@ To make this work, we first map the terminology of stochastic simulation to Gene
 
 *   **Particle/System State ($X_t$):** The current context window (the prompt + reasoning generated so far).
 *   **Trajectory ($\tau$):** The entire Chain-of-Thought (CoT) or sequence of actions taken by an agent from start to finish.
-*   **Reaction/Transition** $P(X_{t+1}|X_t)$: The LLM's probability distribution for the next token or action.
+*   **Reaction/Transition** $P(X_{t+1} \mid X_t)$: The LLM's probability distribution for the next token or action.
 *   **Weight ($w$):** The importance or validity of a specific reasoning path.
 *   **Rare Event:** Successfully solving a very complex, multi-step logic puzzle or generating a novel scientific hypothesis (events that have low probability under standard random sampling).
 
@@ -108,7 +108,7 @@ This is directly inspired by methods like *RESTART* or *Splitting* in physics si
 
 In the RL framework (specifically Offline RL or Model-Based RL), this aligns with **Trajectory Optimization**.
 
-*   **Policy $\pi_\theta(a|s)$:** The LLM generating the thoughts.
+*   **Policy $\pi_\theta(a \mid s)$:** The LLM generating the thoughts.
 *   **Reward $R(\tau)$:** The correctness of the final answer or the coherence of the plan.
 *   **Twist:** Instead of just updating weights $\theta$ (which is slow and expensive), we perform **inference-time optimization**. We treat the generation as a simulation where we want to estimate the expectation of success.
 
