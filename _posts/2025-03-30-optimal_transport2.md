@@ -13,7 +13,7 @@ math: true
 
 Entropic Unbalanced Optimal Transport (EUOT) further relaxes the marginal constraints using the f-divergence $D_{\Psi}(\mu|\nu) = \int \Psi(\frac{d\mu}{d\nu})d\nu$ as the average Radon-Nikodym derivative of two measures. 
 And $\Psi: [0, \infty) \to [0, \infty]$ is assumed to be a convex, lower semi-continuous, non-negative function and $\Psi(1) = 0$, i.e. identical measure has zero divergence. 
-We assume $\Psi$ is an differentiable entropy function that satisfy superlinearity, i.e. $\Psi^{'}_\infty := \lim_{x \to \infty} \Psi(x)/x = \infty$. 
+We assume $\Psi$ is an differentiable entropy function that satisfy superlinearity, i.e. $\Psi^{'}\_\infty := \lim_{x \to \infty} \Psi(x)/x = \infty$. 
 Superlinearity means the growth of $\Psi$ is faster than linear as $x \to \infty$. 
 Therefore, we ensured $D_{\Psi}(\pi_1\mid q_1) = \infty$ when $\pi_1$ has singularity with respect to $q_1$, i.e. when $\pi_1(A) = 1$ and $q_1(A) = 0$ for some set $A$. 
 Also, due to the superlinearity, continuity and convexity of $\Psi$, $D_\Psi$ is a lower semi-continuous function, as desired by the EUOT problem. 
@@ -48,7 +48,7 @@ $\sup_{u, v} \int_{\mathcal{X}} u(x_0)dq_0 - \int_{\mathcal{X}} \Psi^\*(-v(x_1))
 where $u$ and $v$ are the potential function of state space $\mathcal{X}$, $c(x_0, x_1)$ is the cost function of transportation, $\epsilon$ is some regularization parameter. 
 The first variation with respect to the pair of optimal potential $(u^\*, v^\*)$ is 
 
-$\int_{\mathcal{X}} \delta u u^\*(x_0)dq_0 - \int_{\mathcal{X}} \delta v \Psi^{\*'}(-v^\*(x_1))dq_1 - \int_{\mathcal{X} \times \mathcal{X}} (\delta u + \delta v) e^{\frac{u^\*(x_0) + v^\*(x_1) - c(x_0, x_1)}{\epsilon}} dq_0 dq_1
+$\int_{\mathcal{X}} \delta u u^\*(x_0)dq_0 - \int_{\mathcal{X}} \delta v \Psi^{\*'}(-v^\*(x_1))dq_1 - \int_{\mathcal{X} \times \mathcal{X}} (\delta u + \delta v) e^{\frac{u^\*(x_0) + v^\*(x_1) - c(x_0, x_1)}{\epsilon}} dq_0 dq_1$
 
 Reordering the first variation with respect to $\delta v$, we have 
 
