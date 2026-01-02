@@ -16,18 +16,14 @@ Weighted stochastic simulation is nothing more but application of importance sam
 
 Given reaction $R_j$, stochiometric vector $v_j$, propensities $a_j(X(t))$, the time interval of jumps is exponentially distributed and the probability of chosen reaction $R_j$ is $\frac{a_j(X(t))}{a_0}$, where $a_0 = \sum_j a_j$. 
 
-The joint probability of reaction $R_j$ occurs at time interval $(t + \tau, t + \tau + d \tau)$ is therefore $ P\{R_j, (t + \tau, t + \tau + d \tau)\} $
+The joint probability of reaction $R_j$ occurs at time interval $(t + \tau, t + \tau + d \tau)$ is therefore
 
-
-
-$
-P\left\{R_j, (t + \tau, t + \tau + d \tau)\right\} = a_j e^{-a_0 \tau} = \frac{a_j}{a_0} \times a_0 e^{-a_0 \tau} = P\{R_j\} P\{(t + \tau, t + \tau + d \tau)\}
-$
+$P\\{R_j, (t + \tau, t + \tau + d \tau)\\} = a_j e^{-a_0 \tau} = \frac{a_j}{a_0} \times a_0 e^{-a_0 \tau} = P\\{R_j\\} P\\{(t + \tau, t + \tau + d \tau)\\}$
 
 Introduce the diverged probability $b_j$ with $b_0 = \sum_j b_j$ of the one-step jump process given above, we have 
-$$
-P\left\{R_j, (t + \tau, t + \tau + d \tau)\right\} = a_j e^{-a_0 \tau} \frac{b_j/b_0}{b_j/b_0} = \frac{b_j}{b_0} a_0 e^{-a_0 \tau} \frac{a_j/a_0}{b_j/b_0}
-$$
+
+$P\left\\{R_j, (t + \tau, t + \tau + d \tau)\right\\} = a_j e^{-a_0 \tau} \frac{b_j/b_0}{b_j/b_0} = \frac{b_j}{b_0} a_0 e^{-a_0 \tau} \frac{a_j/a_0}{b_j/b_0}$
+
 This is equivalent to choose the same jump according to probability $b_j/b_0$ with the same time interval distribution $p\left\{d\tau(t)\right\} = a_0 e^{-a_0 \tau}$ with an additional weighted factor $\omega_j = \frac{a_j/a_0}{b_j/b_0}$. 
 
 The trajectory weight can be obtained from the Markovian property 
