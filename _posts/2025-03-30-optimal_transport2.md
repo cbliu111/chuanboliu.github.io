@@ -95,16 +95,16 @@ $\pi^\* = \inf_{\pi_0 = q_0, \pi \in \mathcal{M}\_2(\mathcal{X} \times \mathcal{
 
 $\inf_{\pi_0 = q_0, \pi \in \mathcal{P}\_2(\mathcal{X} \times \mathcal{X})} \left[ D(P_{0, 1}^\* \mid Q_{0, 1}) +  \beta D_{\Psi}(\pi_1 \mid q_1)\right]$
 
-$\inf_{\pi_0 = q_0, \pi \in \mathcal{P}\_2(\mathcal{X} \times \mathcal{X})} \left[ KL(P^\*| Q_{0, 1}) +  \beta D_{\Psi}(\pi_1 \mid q_1)\right]$
+$\inf_{\pi_0 = q_0, \pi \in \mathcal{P}\_2(\mathcal{X} \times \mathcal{X})} \left[ KL(P^\* \mid Q_{0, 1}) +  \beta D_{\Psi}(\pi_1 \mid q_1)\right]$
 
 The above equation implies an unbalanced SB (uSB) problem
 
-$u^\* = \inf_u KL(P^u\mid Q) + \beta D_\Psi(P_1^u|q_1), \quad dQ_t = \sigma dW_t, \quad Q_0 = q_0$
+$u^\* = \inf_u KL(P^u\mid Q) + \beta D_\Psi(P_1^u \mid q_1), \quad dQ_t = \sigma dW_t, \quad Q_0 = q_0$
 
 where $u$ induced the path measure $P^u$. 
 It can be reformulated in the following expressions using Girsanov's theorem \cite{sarkkaAppliedStochasticDifferential2019}
 
-$u^\* = \inf_u \int_{0}^{1} \int_{\mathcal{X}} \frac{1}{2}\mid|u_t(x)||^2 d\rho_t(x) dt + \beta D_\Psi(\rho_1|q_1)$
+$u^\* = \inf_u \int_{0}^{1} \int_{\mathcal{X}} \frac{1}{2} \mid u_t(x)||^2 d\rho_t(x) dt + \beta D_\Psi(\rho_1 \mid q_1)$
 
 s.t.
 
@@ -122,13 +122,13 @@ $KL(P^\*\mid Q) + \beta D_\Psi(P_1^u\mid q_1) = D(P_{0, 1}^\*\mid Q_{0, 1}) + \b
 for the optimal path measure, which has the same solution as EUOT by assigning $\pi^\* = P_{0, 1}^\*$. 
 Therefore, uSB problem is equivalent to the EUOT problem 
 
-$P_{0, 1}^\* = \pi^\* = \inf_{\pi \in \Pi(q_0, q_1)} \int \frac{1}{2}\mid|x_1 - x_0\mid|^2 d\pi(x_0, x_1) - \sigma^2 H(\pi) + \beta D_\Psi(\pi_1\mid q_1)$
+$P_{0, 1}^\* = \pi^\* = \inf_{\pi \in \Pi(q_0, q_1)} \int \frac{1}{2} \lVert x_1 - x_0 \rVert^2 d\pi(x_0, x_1) - \sigma^2 H(\pi) + \beta D_\Psi(\pi_1\mid q_1)$
 
 $P_t^\*(\cdot\mid x_0, x_1) = Q_t(\cdot\mid x_0, x_1), \quad (x_0, x_1) \sim P^\*\_{0, 1}$
 
 The optimal path measure is obtained by integral 
 
-$P_t^\*(x) = \int P_t^\*(x|x_0, x_1) dP_{0, 1}^\*$
+$P_t^\*(x) = \int P_t^\*(x \mid x_0, x_1) dP_{0, 1}^\*$
 
 which is an infinite mixture of Brownian bridges weighted by an EUOT plan. 
 
