@@ -9,6 +9,8 @@ tags:
 math: true
 ---
 
+## Continuous time Markov chian 
+
 A continuous time Markov chain can be viewed as a discrete time Markov chain with altered transition times. 
 
 $P(X(s+t)=j \mid X(s)=i, X(r)=i_r, r \in \xi_s \subseteq [0, s)) = P(X(s+t)=j \mid X(s)=i)$
@@ -124,7 +126,39 @@ $P(t) = \sum_{k=0}^\infty \tilde{P}^k \frac{e^{-\lambda t} (\lambda t)^k}{k!} = 
 Existence and uniqueness of limiting probability distribution:
 For an irreducible finite-state continuous time Markov chain, there exists a unique limiting probability vector such that $\alpha_j \equiv \lim_{t \to \infty} P_{i,j}(t)$ is stationary for all $j$ and $t > 0$. 
 
+## Toward continuous decision making
 
+Most foundational RL algorithms (like PPO, DQN, or SAC) are built on the assumption of discrete time steps. 
+The agent observes the state $S_t$, takes an action $A_t$, and receives a reward $R_{t+1}$ after a fixed duration $\Delta t$ (e.g., every 0.1 seconds).
+The discrete time steps simplifies the math. It allows us to use the Bellman Equation without complicated calculus involving continuous time.
+It works fine for video games (frames are fixed), board games (turns are fixed), and some robotics simulations where the clock is perfectly controlled.
+
+However, in the "real world" (robotics, self-driving cars, high-frequency trading, industrial control), the fixed-interval assumption breaks down for three main reasons:
+* **System Latency**: If an agent decides to "brake," the mechanical brakes might engage 50ms later, or 120ms later depending on network traffic or hydraulic pressure. If the agent assumes a perfect 100ms step, the world has drifted before the action happens.
+* **Computation Time**: Large AI models (like Transformers used in agentic workflows) take variable amounts of time to "think." Step 1 might take 20ms to process; Step 2 might take 200ms. If you force a constant interval, the agent effectively "freezes" or acts on old data.
+* **Event-Driven Dynamics**: Real life is continuous. A car doesn't move in discrete jumps. An obstacle might appear between time steps $t$ and $t+1$.
+
+Continuous decision making: 
+
+**A. Semi-Markov Decision Processes (SMDPs)**
+Instead of deciding every 0.1 seconds, the agent decides an action and also decides how long that action should last (or waits for an event to terminate the action).
+
+Example: A robot navigating a warehouse doesn't decide "move forward" every millisecond. It decides "move to aisle 4" (an action that takes variable time) and only makes a new decision when it arrives or detects an obstacle.
+
+**B. Asynchronous RL**
+In this model, observation, inference, and action happen in parallel threads without waiting for a global "tick."
+
+Example: A self-driving car's vision system updates at 30Hz, its Lidar at 10Hz, and its steering control at 100Hz. The "Agent" ingests these asynchronously rather than forcing them into a single synchronized clock.
+
+**C. Hierarchical Reinforcement Learning (HRL)**
+This is the most common approach for "Agentic" AI (like LLM-based agents).
+
+High-Level Agent: Makes decisions at variable, long intervals (e.g., "Plan a trip to Paris").
+Low-Level Controller: Executes motor controls at high-frequency fixed intervals to achieve that plan.
+This decouples the "thinking" (variable time) from the "acting" (often fixed time).
+
+
+State-of-the-art deployment of Agentic AI has moved beyond rigid, constant-time loops into **hierarchical and asynchronous systems** that blend long-term reasoning with real-time reflex. Instead of a single model processing every millisecond, modern agents typically utilize a **"system 1 / system 2" architecture**: a high-level cognitive planner (often an LLM or Vision-Language Model) handles complex, variable-duration reasoning tasks and goal setting, while specialized low-level controllers execute high-frequency sensorimotor actions. These systems increasingly rely on **event-driven dynamics**—acting when triggered by environmental changes rather than a ticking clock—and employ continuous-time learning frameworks to mitigate the latency and irregularity inherent in real-world hardware, ensuring that computation time doesn't desynchronize the agent from physical reality.
 
 
 
