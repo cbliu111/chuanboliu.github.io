@@ -17,7 +17,7 @@ Therefore, the value of backward error behaves like going through a $\mathbf{a}\
 We can generally write it as $\mathbf{\delta}\_l = \mathbf{g}(\mathbf{e}\_l, \mathbf{a}\_l)$. 
 The backprop algorithm can then be understood as a mean to maximize the correlation between $\mathbf{\delta}\_l$ and $\mathbf{h}\_{l-1}$. 
 
-The chain rule in Eq.~\ref{eq:backprop_update_rule} also requires the network to have precise knowledge of all the downstream synapses, any disruption of the connectivity or the unawareness of the computational details would break the error propagation. 
+The chain rule in backpropagation also requires the network to have precise knowledge of all the downstream synapses, any disruption of the connectivity or the unawareness of the computational details would break the error propagation. 
 
 Empirical evidences have shown that retrograde transport operates on timescales that are orders of magnitude slower than forward propagating neural activity {harrisStabilityFittestOrganizing2008}, making backprop of error unlikely on the same transportation path. 
 
